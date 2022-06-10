@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+*/
+*:focus{
+    outline: none;
+}
+
+body{
+    position:relative;
+    background-image: url("https://techbullion.com/wp-content/uploads/2021/12/play-YouTube-in-backgroun.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: 'poppins',sans-serif ;
+}
+
+.navbar{
+    position:fixed;
+    left:0;
+    top:0;
+    display:flex;
+    width:100%;
+    height:60px;
+    background-color: white;
+    align-items:center;
+    padding:20px;
+    
+}
+
+.user-options{
+    display:flex;
+    margin-left:auto;
+    height:35px;
+    align-items:center;
+}
+
+.user-options .icon{
+    height:80%;
+    margin-left:20px;
+
+}
+
+.search-box{
+    position:relative;
+    max-width:500px;
+    width: 50%;
+    height:35px;
+    display: flex;
+   
+}
+
+.search-bar{
+    width:85%;
+    height:100%;
+    border:2px solid #acadb0;
+    padding:0 20px;
+    font-size:16px;
+    text-transform:capitalize;
+}
+
+.search-btn{
+    width:15%;
+    height:100%;
+    border:2px solid #acadb0;
+    border-left:none;
+    padding:5px 0;
+}
+
+.search-btn img{
+    height:100%;
+}
+
+.side-bar{
+    position:fixed;
+    left:0;
+    top:60px;
+    min-width:200px;
+    width:250px;
+    height:calc(100vh-60px);
+    background-color: white;
+    padding-right:10px;
+
+}
+
+.links{
+    display:blocks;
+    width:100%;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+    text-transform: capitalize;
+    color:#62656e;
+    font-size:17px;
+    font-weight:500;    
+
+}
+
+.links i{
+    color:black;;
+    height:25px;
+    margin-right:20px;
+    font-size:18px;
+}
+
+.links:hover, .links.active{
+    background-color:#b8b9ba;
+}   
+
+.toggle-btn{
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top:  50%;
+    transform: translateY(-50%);
+    background: #979797;
+}
+
+
+.toggle-btn span:nth-child(1){
+    top: 0;
+}
+
+.toggle-btn span:nth-child(3){
+    top:100%;
+}
+
+.logo{
+    margin: 30px;
+    
+    height:2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.seperator{
+    border: none;
+    border-bottom:1px solid rgba(0,0,0,0.1) ;
+    margin: 20px 0;
+}
+
+
+.filters{
+    position: fixed;
+    left: 250px;
+    top: 60px;
+    width: calc(100%- 250px);
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y:hidden;
+}
+
+.filters::-webkit-scrollbar{
+    display: none;
+}
+
+
+.filter-options{
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #f0f0f0;
+    border: 1px solid #dbdbdb;
+    text-transform: capitalize;
+    margin-right: 10px;
+    color:#242424 ;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filter-options:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+
+
+.filter-options.active{
+    color: #fff;
+    background: #242424;
+}
+
+
+.video-container{
+    width: calc(100% - 250px);
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden;
+}
+
+
+.video{
+    min-height: 340px;
+    height: auto;
+    margin: 0.4rem;
+}
+
+
+.thumbnail{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.content{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.title{
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
+}
+
+.channel-name{
+    font-size: 14px;
+    margin: 2px 0;
+    color: #979797;
+}
+
+.video:hover{
+    cursor: pointer;
+}
